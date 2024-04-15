@@ -31,3 +31,4 @@ Werkzeug==3.0.2
 wincertstore
 xgboost==2.0.3
 zipp==3.18.1
+pytest==8.1.1
