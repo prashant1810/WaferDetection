@@ -1,4 +1,4 @@
-# Project: WaferFaultDetection # 
+# WaferFaultDetection # 
 
 ## Problem Statement: ##
 A wafer (In electronics), also called a slice or substrate, is a thin slice of semiconductor,
