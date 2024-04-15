@@ -1,4 +1,6 @@
-Problem Statement:
+# Project: WaferFaultDetection # 
+
+## Problem Statement: ##
 A wafer (In electronics), also called a slice or substrate, is a thin slice of semiconductor,
 such as a crystalline silicon (c-Si), used for fabrication of integrated circuits and in photovoltaics,
 to manufacture solar cells.
@@ -11,7 +13,7 @@ There are two classes: +1 and -1.
 -1: Means that the wafer is faulty and needs to be replaced.
 
 
-Data Description
+## Data Description ##
 The client will send data in multiple sets of files in batches at a given location.
 Data will contain Wafer names and 590 columns of different sensor values for each wafer.
 The last column will have the "Good/Bad" value for each wafer.
@@ -22,7 +24,7 @@ relevant information about the training files such as:
 Name of the files, Length of Date value in FileName, Length of Time value in FileName, Number of Columns, 
 Name of Columns, and their datatype.
 
-Data Validation
+## Data Validation ##
 In This step, we perform different sets of validation on the given set of training files.
 
 Name Validation: We validate the name of the files based on the given name in the schema file. We have 
@@ -43,7 +45,7 @@ the files into the Database. If the datatype is wrong, then the file is moved to
 Null values in columns: If any of the columns in a file have all the values as NULL or missing, we discard such
 a file and move it to "Bad_Data_Folder".
 
-Data Insertion in Database
+## Data Insertion in Database ##
 Database Creation and Connection: Create a database with the given name passed. If the database is already created,
 open the connection to the database.
 Table creation in the database: A table with the name - "Good_Data", is created in the database for inserting the files 
@@ -54,8 +56,8 @@ training to be done on new as well as old training files.
 Insertion of file in the table: All the files in the "Good_Data_Folder" are inserted in the above-created table. If
 any file has an invalid data type in any of the columns, the file is not loaded in the table and is moved to "Bad_Data_Folder".
 
-Model Training
- Data Export from Db: The data in a stored database is exported as a CSV file to be used for model training.
+## Model Training ##
+Data Export from Db: The data in a stored database is exported as a CSV file to be used for model training.
  
 Data Preprocessing: 
     Check for null values in the columns. If present, impute the null values using the KNN imputer.
