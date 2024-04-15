@@ -15,7 +15,7 @@ kneed==0.8.5
 MarkupSafe==2.1.5
 matplotlib==3.8.4
 more-itertools==10.2.0
-numpy==1.26.4
+numpy
 pandas==2.2.2
 pyparsing==3.1.2
 pyrsistent==0.20.0
