@@ -28,7 +28,7 @@ class trainModel:
 
     def trainingModel(self):
         # Logging the start of Training
-        self.log_writer.log(self.file_object, 'Start of Training')
+        # self.log_writer.log(self.file_object, 'Start of Training')
         try:
             # Getting the data from the source
             data_getter=data_loader.Data_Getter(self.file_object,self.log_writer)
